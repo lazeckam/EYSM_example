@@ -65,6 +65,10 @@ Joint probability in the model is given as
     \[P(X=x\lvert Y=y) = P\Big((-1)^{x}\tilde{X}\leq\frac{(-1)^{x}}{2}\lvert Y=y\Big),\]
     \[P(Z_i=z_i\lvert Y=y) = P\Big((-1)^{z_i}\tilde{Z}_i\leq\frac{(-1)^{z_i}\gamma^i}{2}\lvert Y=y\Big)\]
     for $i = 1, 2, 3,, 4$, where $x, z_1, z_2, z_3, z_4 \in \{0,1\}$. Thus $X\lvert Y=y \sim Bern(\Phi((2y-1)/2)$ and $Z_i\lvert Y=y \sim Bern(\Phi(\gamma^i(2y-1)/2))$.  Variables $X, Z_1, Z_2, Z_3, Z_4$ are conditionally independent given $Y$ but $X$ an $Y$ are not conditionally independent given $Z_1,Z_2,Z_3, Z_4$.
+    
+```{r, out.width="0.3\\linewidth", include=TRUE, fig.align="center", fig.cap=c("The graphical representation of the considered model"), echo=FALSE}
+knitr::include_graphics("tikz_graphs.pdf")
+```
 
 ## Plots <a name="plots"></a>
 
