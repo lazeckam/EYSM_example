@@ -1,6 +1,7 @@
 ---
-title: "EYSM example from the article"
-output: html_document
+title: "EYSM - example from the article"
+output: pdf_document
+#output: rmarkdown::github_document
 ---
 
 ```{r setup, include=FALSE}
@@ -102,7 +103,7 @@ p <- ggplot(df, aes(x=frac, y=power, shape=name, color=name)) +
   ylab("Fraction of rejections") +
   ggtitle("Significance level", subtitle="Tests exceeding the significance level") +
   theme(legend.position = c(1-0.02,1-0.02), legend.justification = c(1,1))
-ggsave("significance_v1.pdf", p, width=4, height=4)
+# ggsave("significance_v1.pdf", p, width=4, height=4)
 ggsave("significance_v1.png", p, width=4, height=4)
 p
 ```
@@ -140,7 +141,7 @@ p <- ggplot(df, aes(x=frac, y=power, shape=name, color=name)) +
   ggtitle("Significance level", subtitle="Tests holding the significance level") +
   ylim(0, 0.2) +
   theme(legend.position = c(1-0.02,1-0.02), legend.justification = c(1,1))
-ggsave("significance_v2.pdf", p, width=4, height=4)
+# ggsave("significance_v2.pdf", p, width=4, height=4)
 ggsave("significance_v2.png", p, width=4, height=4)
 p
 ```
@@ -176,7 +177,7 @@ p <- ggplot(df, aes(x=frac, y=power, shape=name, color=name)) +
   ylab("Fraction of rejections") +
   ggtitle("Power", subtitle="Tests holding the significance level") +
   theme(legend.position = c(1-0.02,0+0.02), legend.justification = c(1,0))
-ggsave("power.pdf", p, width=4, height=4)
+# ggsave("power.pdf", p, width=4, height=4)
 ggsave("power.png", p, width=4, height=4)
 p
 ```
